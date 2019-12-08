@@ -14,7 +14,8 @@ RUN set -eux; \
 ENV DEBIAN_FRONTEND dialog
 
 RUN pip install awscli
-RUN npm install -g aws-cdk
+RUN npm install -g @aws-amplify/cli
+RUN npm install create-react-app
 RUN mkdir /root/.aws
 
 COPY ./entrypoint.sh /

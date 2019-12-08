@@ -12,10 +12,10 @@ OUTPUT=text
 
 ## build
 ```
-$ docker build -t aws-cdk . --no-cache
+$ docker build -t aws-amplify . --no-cache
 ```
 
 ## start
 ```
-$ docker run --rm -it --env-file ./env.list -v `pwd`:/usr/src/ aws-cdk /bin/bash
+$ docker run --rm -it --env-file ./env.list -v `pwd`:/usr/src/ aws-amplify /bin/bash
 ```
