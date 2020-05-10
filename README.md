@@ -1,6 +1,7 @@
 # aws-cdk-docker
 
 ## set
+
 ```
 $ cp env.list.sample env.list
 $ vi env.list
@@ -11,11 +12,19 @@ OUTPUT=text
 ```
 
 ## build
+
 ```
 $ docker build -t aws-amplify . --no-cache
 ```
 
 ## start
+
 ```
-$ docker run --rm -it --env-file ./env.list -v `pwd`:/usr/src/ aws-amplify /bin/bash
+$ docker run --rm -it --env-file ./env.list -v `pwd`:/usr/src/ -p 3000:3000 aws-amplify /bin/bash
+```
+
+## example
+
+```
+$ create-react-app hello-world
 ```

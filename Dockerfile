@@ -1,4 +1,4 @@
-FROM node:8.16.2-jessie-slim
+FROM node:10-jessie-slim
 
 ENV LANG C.UTF-8
 
@@ -15,7 +15,7 @@ ENV DEBIAN_FRONTEND dialog
 
 RUN pip install awscli
 RUN npm install -g @aws-amplify/cli
-RUN npm install create-react-app
+RUN npm install -g create-react-app
 RUN mkdir /root/.aws
 
 COPY ./entrypoint.sh /
