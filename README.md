@@ -26,5 +26,5 @@ $ docker run --rm -it --env-file ./env.list -v `pwd`:/usr/src/ -p 3000:3000 aws-
 ## example
 
 ```
-$ npx create-react-app my-app hello-world
+$ npx create-react-app my-app
 ```
