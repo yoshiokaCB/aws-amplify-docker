@@ -60,6 +60,8 @@ start amplify mock api
 $ docker run --rm -itd --env-file ./env.list -v `pwd`:/usr/src/ -p 20002:20002 aws-amplify amplify mock api
 ```
 
+stop server
+
 ```
 $ docker stop [docker id]
 ```
