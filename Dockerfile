@@ -1,11 +1,11 @@
-FROM node:10-jessie-slim
+FROM node:16-buster-slim
 
 ENV LANG C.UTF-8
 ENV DEBIAN_FRONTEND noninteractive
 RUN set -eux; \
     apt-get update -y && \
     apt-get install -y --no-install-recommends \
-    python python-pip wget software-properties-common apt-transport-https \
+    python python-pip wget software-properties-common apt-transport-https gnupg \
     ; \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
